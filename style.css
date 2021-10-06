@@ -8,13 +8,14 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .keys {
   display: flex;
-  flex: 1;
+  /* flex: 1; */
   min-height: 100vh;
+  position: relative;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
@@ -50,4 +51,17 @@ kbd {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: hsl(0, 100%, 50%);
+}
+
+input {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  outline: none;
+  border: none;
+  background-color: hsl(0, 100%, 50%);
+  width: 370px;
+  color: #fff;
+  font-size: xx-large;
 }
